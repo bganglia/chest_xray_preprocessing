@@ -1,4 +1,4 @@
-from torch import random_split
+from torch.utils.data import random_split
 
 def grouped_split(dataset, groups, lengths):
     unique_groups = groups.unique()
